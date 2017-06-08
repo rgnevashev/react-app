@@ -4,7 +4,6 @@ import { Provider } from 'react-redux'
 import { BrowserRouter as Router } from 'react-router-dom'
 
 import injectTapEventPlugin from 'react-tap-event-plugin'
-import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider'
 
 // Styles
 import './index.css'
@@ -23,11 +22,9 @@ injectTapEventPlugin()
 
 ReactDOM.render(
   <Provider store={store}>
-    <MuiThemeProvider>
-      <Router>
-        <App />
-      </Router>
-    </MuiThemeProvider>
+    <Router>
+      <App />
+    </Router>
   </Provider>,
   document.getElementById('root')
 )
