@@ -4,7 +4,7 @@ import {
   AUTH_SET_USER
 } from './constants'
 
-export const authSetToken = (token) => ({
+export const authSetToken = token => ({
   type: AUTH_SET_TOKEN,
   token
 })
@@ -13,7 +13,7 @@ export const authDiscardToken = () => ({
   type: AUTH_DISCARD_TOKEN
 })
 
-export const authSetUser = (user) => ({
+export const authSetUser = user => ({
   type: AUTH_SET_USER,
   user
 })
